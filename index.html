@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1d3f 50%, #2d1b4e 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #a0a0ff;
+            margin-bottom: 10px;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(123, 47, 247, 0.3);
+        }
+        
+        .card h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .card p {
+            color: #d0d0ff;
+            line-height: 1.8;
+        }
+        
+        .emoji {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .stat-box {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 200px;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+        
+        .stat-label {
+            color: #a0a0ff;
+            margin-top: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            color: #a0a0ff;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .subtitle {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Space Exploration Hub</h1>
+            <p class="subtitle">Discover the Wonders of the Universe</p>
+            <p style="color: #d0d0ff;">Exploring the final frontier, one mission at a time</p>
+        </header>
+        
+        <div class="cards">
+            <div class="card">
+                <span class="emoji">🌍</span>
+                <h2>Our Home Planet</h2>
+                <p>Earth is the only known planet to harbor life. It's our cosmic oasis in the vast expanse of space, with perfect conditions for life as we know it.</p>
+            </div>
+            
+            <div class="card">
+                <span class="emoji">🌙</span>
+                <h2>The Moon</h2>
+                <p>Earth's only natural satellite has been a source of fascination for millennia. The Apollo missions proved humanity could reach beyond our world.</p>
+            </div>
+            
+            <div class="card">
+                <span class="emoji">🔴</span>
+                <h2>Mars Mission</h2>
+                <p>The Red Planet is our next destination. Multiple rovers are currently exploring Mars, paving the way for future human missions.</p>
+            </div>
+            
+            <div class="card">
+                <span class="emoji">🛸</span>
+                <h2>Space Stations</h2>
+                <p>The International Space Station orbits Earth every 90 minutes, serving as a laboratory for scientific research in microgravity.</p>
+            </div>
+            
+            <div class="card">
+                <span class="emoji">🔭</span>
+                <h2>Deep Space</h2>
+                <p>Telescopes like James Webb are revealing the universe's secrets, showing us galaxies billions of light-years away.</p>
+            </div>
+            
+            <div class="card">
+                <span class="emoji">⭐</span>
+                <h2>Exoplanets</h2>
+                <p>Scientists have discovered thousands of planets orbiting distant stars. Some might have conditions suitable for life!</p>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">5,000+</div>
+                <div class="stat-label">Exoplanets Discovered</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">384,400</div>
+                <div class="stat-label">km to Moon</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">13.8B</div>
+                <div class="stat-label">Years (Universe Age)</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>🌌 Keep looking up - the universe is waiting to be explored! 🌌</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">Created with curiosity and wonder</p>
+        </footer>
+    </div>
+</body>
+</html>
